@@ -1,3 +1,7 @@
+/*
+The Iterator Pattern can be used in our applications to abstract the way we access items from a data structure. 
+For example, let's suppose we need to retrieve all the items that are greater than 4 from the following tree structure
+*/
 var collection = {
     nodeValue: 7,
     left: {
@@ -15,6 +19,9 @@ var collection = {
     }
 };
 
+/*
+Let's now implement our iterator function. Since tree data structures can have nesting, we end up with the following recursive implementation
+*/
 function iterateTreeValues(node, callback) {
     if (node === null || node === undefined) {
         return;
@@ -36,6 +43,9 @@ function iterateTreeValues(node, callback) {
     }
 }
 
+/*
+Finally, we end up with an implementation that looks as follows
+*/
 var valuesArray = [];
 iterateTreeValues(collection, function(value) {
     if (value > 4) {
