@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard Example</title>
+    <link rel="stylesheet" type="text/css" href="dashboard-example.css">
+  </head>
+  <body>
+    <h1 id="pageHeader">Dashboard Example</h1>
+
+    <div class="dashboardContainer">
+      <section class="dashboardCategories">
+        <select id="categoriesSelector">
+          <option value="0" selected>Products</option>
+          <option value="1">Sales</option>
+          <option value="2">Advertisements</option>
+        </select>
+        <section class="dashboardCategory">
+          <button>Product A</button>
+          <button>Product B</button>
+          <button>Product C</button>
+          <button>Product D</button>
+          <button>Product E</button>
+        </section>
+        <section class="dashboardCategory hidden">
+          <button>1st week</button>
+          <button>2nd week</button>
+          <button>3rd week</button>
+          <button>4th week</button>
+        </section>
+        <section class="dashboardCategory hidden">
+          <button>Advertisement 1</button>
+          <button>Advertisement 2</button>
+          <button>Advertisement 3</button>
+        </section>
+        <div class="clear"></div>
+      </section>
+
+      <section class="boxContainer">
+        <div class="boxsizer">
+          <article class="box">
+            <header class="boxHeader">
+              Hint!
+              <button class="boxCloseButton">&#10006;</button>
+            </header>
+            Press the buttons above to add information boxes...
+          </article>
+        </div>
+      </section>
+      <div class="clear"></div>
+    </div>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dashboard-example.js"></script>
+  </body>
+</html>
